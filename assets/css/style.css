@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'fira sans', sans-serif;
+}
+body {
+    background :#111428;
+}
+.container {
+    text-align: center;
+    box-shadow: 0px 0px 5px 5px rgba(63, 63, 59, 0.5);
+    margin: 10vh auto 0 auto;
+    width: 25%;
+    padding: 20px;
+    background : #1f2937;
+    border-radius: 2rem;
+}
+input{
+    background : none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+.container h2 {
+    color:#E98C59;
+}
+.container input{
+    margin : 20px auto 20px auto;
+    text-align: right;
+    background : #b3caeb;
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    box-shadow: 0px 0px 5px 3px rgba(139, 135, 135, 0.5);
+    padding: 10px;
+}
+/* //use css grid to align buttons */
+.buttons-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.buttons-grid > div {
+    border-top: 1px solid white;
+    border-right: 1px solid white;      
+    border-radius: 1.8rem;
+}
+.buttons-grid .button{
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;  
+    margin :5px;  
+    transition: 0.7s;
+    color: white;
+    background-color: rgb(123, 120, 150);
+}
+.buttons-grid .button:hover{
+    opacity: 0.4;    
+}
+.buttons-grid #evaluate {
+    background-color: rgb(89 194 124);
+}
+.buttons-grid #backspace {
+    background-color: rgb(90 78 200);
+}
+.buttons-grid #clear {
+    background-color: rgb(198 96 96)
+}
+.error {
+    box-shadow: 0px 0px 6px 4px rgb(139 0 0);
+    color: red;
+}
